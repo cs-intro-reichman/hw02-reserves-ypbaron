@@ -13,7 +13,7 @@ public class DamkaBoard {
 			}
 			int j = 0;
 			while (j < n) {
-				System.out.print("*");
+				System.out.print("* ");
 				j++;
 			}
 			System.out.println();
