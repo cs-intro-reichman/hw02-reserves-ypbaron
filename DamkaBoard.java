@@ -10,13 +10,11 @@ public class DamkaBoard {
 		// iterate through square rows
 		while (i < n) {
 			// iterate through square columns
-			if (i % 2 == 1) {
-				System.out.print(" ");
-			}
+			
 			int j = 0;
 			while (j < n) {
-				if (j + 1 == n) {
-					System.out.print("*");
+				if (i % 2 == 1) {
+					System.out.print(" *");
 				} else {
 					System.out.print("* ");
 				}
