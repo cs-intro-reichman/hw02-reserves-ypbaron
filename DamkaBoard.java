@@ -3,9 +3,7 @@
  */
 public class DamkaBoard {
 	public static void main(String[] args) {
-		int n = 4; // TODO: EREASE
-
-		// int n = Integer.parseInt(args[0]); // TODO: UNCOMMENT
+		int n = Integer.parseInt(args[0]);
 		int i = 0;
 		// iterate through square rows
 		while (i < n) {
