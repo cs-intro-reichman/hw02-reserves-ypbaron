@@ -24,6 +24,22 @@ public class OneOfEachStats {
 		//// just like you had in the previous version, except that the 
 		//// randomization will be based on the given seed.
 		//// This is the only change that you have to do in the program.
-		    
+		boolean isboy = false;
+		boolean isgirl = false;
+		int sum = 0;
+		
+		while (isboy == false || isgirl == false) {
+			double rnd = generator.nextDouble();
+			if (rnd < 0.5){
+				isgirl = true;
+				System.out.print("g ");
+			} else {
+				isboy = true;
+				System.out.print("b ");
+			}
+			sum = sum + 1;
+		}
+		System.out.println();
+		System.out.println("You made it... and you now have " + sum + " children.");	    
 	}
 }

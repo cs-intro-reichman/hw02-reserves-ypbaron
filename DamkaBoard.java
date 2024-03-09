@@ -3,7 +3,9 @@
  */
 public class DamkaBoard {
 	public static void main(String[] args) {
-		int n = Integer.parseInt(args[0]);
+		int n = 4; // TODO: EREASE
+
+		// int n = Integer.parseInt(args[0]); // TODO: UNCOMMENT
 		int i = 0;
 		// iterate through square rows
 		while (i < n) {
@@ -13,7 +15,11 @@ public class DamkaBoard {
 			}
 			int j = 0;
 			while (j < n) {
-				System.out.print("* ");
+				if (j + 1 == n) {
+					System.out.print("*");
+				} else {
+					System.out.print("* ");
+				}
 				j++;
 			}
 			System.out.println();

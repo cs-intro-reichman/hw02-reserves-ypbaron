@@ -20,7 +20,6 @@ public class OneOfEach {
 			}
 			sum = sum + 1;
 		}
-		System.out.println();
-		System.out.println("You made it... and you now have " + sum + " children.");
+
 	}
 }
