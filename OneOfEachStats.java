@@ -29,7 +29,7 @@ public class OneOfEachStats {
 		int sumOfChildren = 0;
 		int amountOf2Children = 0;
 		int amountOf3Children = 0;
-		int amountOf4Children = 0;
+		int amountOfMoreThan4Children = 0;
 
 
 		for (int i = 0; i < numberOfTests; i++) {
@@ -56,8 +56,8 @@ public class OneOfEachStats {
 				amountOf2Children++;
 			} else if (sum == 3) {
 				amountOf3Children++;
-			} else if (sum == 4) {
-				amountOf4Children++;
+			} else {
+				amountOfMoreThan4Children++;
 			}
 		}
 		// System.out.println();
@@ -65,12 +65,12 @@ public class OneOfEachStats {
 		System.out.println("Average: " + ((double)sumOfChildren/numberOfTests) + " children to get at least one of each gender.");
 		System.out.println("Number of families with 2 children: " + amountOf2Children);
 		System.out.println("Number of families with 3 children: " + amountOf3Children);
-		System.out.println("Number of families with 4 children: " + amountOf4Children);
+		System.out.println("Number of families with 4 or more children: " + amountOfMoreThan4Children);
 
-		if (amountOf2Children >= amountOf3Children && amountOf2Children >= amountOf3Children) {
-			System.out.println("The most common number of children is 2 or more.");
-		} else if (amountOf3Children >= amountOf2Children && amountOf3Children >= amountOf4Children) {
-			System.out.println("The most common number of children is 3 or more.");
+		if (amountOf2Children >= amountOf3Children && amountOf2Children >= amountOfMoreThan4Children) {
+			System.out.println("The most common number of children is 2.");
+		} else if (amountOf3Children >= amountOf2Children && amountOf3Children >= amountOfMoreThan4Children) {
+			System.out.println("The most common number of children is 3.");
 		} else {
 			System.out.println("The most common number of children is 4 or more.");
 		}
